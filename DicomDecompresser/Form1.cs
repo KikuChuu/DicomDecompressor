@@ -73,7 +73,7 @@ namespace DicomDecompresser
         {
             IEnumerable<string> pathList = Directory.EnumerateFiles(txtInputDirectory.Text);
             Process p = new Process();
-            p.StartInfo.FileName = "dcmdjpeg.exe";
+            p.StartInfo.FileName = ".\\Resources\\dcmdjpeg.exe";
             p.StartInfo.UseShellExecute = false;
             p.StartInfo.RedirectStandardOutput = true;
             p.StartInfo.CreateNoWindow = true;
